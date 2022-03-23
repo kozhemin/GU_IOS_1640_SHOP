@@ -42,4 +42,14 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+
+    func makeCatalogGoodDataFactory() -> CatalogRequestFactory {
+        let errorParser = makeErrorParser()
+        return Goods(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+
+    func makeGoodRequestFactory() -> GoodRequestFactory {
+        let errorParser = makeErrorParser()
+        return Goods(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }
