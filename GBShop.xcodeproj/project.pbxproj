@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9702F60827EBA82C004304B3 /* AuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702F60727EBA82C004304B3 /* AuthTests.swift */; };
 		97D7224227D0129300DC31F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7224127D0129300DC31F7 /* AppDelegate.swift */; };
 		97D7224427D0129300DC31F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7224327D0129300DC31F7 /* SceneDelegate.swift */; };
 		97D7224627D0129300DC31F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7224527D0129300DC31F7 /* MainViewController.swift */; };
 		97D7224B27D0129600DC31F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D7224A27D0129600DC31F7 /* Assets.xcassets */; };
 		97D7224E27D0129600DC31F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D7224C27D0129600DC31F7 /* LaunchScreen.storyboard */; };
-		97D7225927D0129600DC31F7 /* ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7225827D0129600DC31F7 /* ShopTests.swift */; };
 		97D7226327D0129600DC31F7 /* ShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7226227D0129600DC31F7 /* ShopUITests.swift */; };
 		97D7226527D0129600DC31F7 /* ShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7226427D0129600DC31F7 /* ShopUITestsLaunchTests.swift */; };
 		97D7227427D015DF00DC31F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7227327D015DF00DC31F7 /* MainView.swift */; };
@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9702F60727EBA82C004304B3 /* AuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTests.swift; sourceTree = "<group>"; };
 		97D7223E27D0129200DC31F7 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D7224127D0129300DC31F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97D7224327D0129300DC31F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		97D7224D27D0129600DC31F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97D7224F27D0129600DC31F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97D7225427D0129600DC31F7 /* GBShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97D7225827D0129600DC31F7 /* ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTests.swift; sourceTree = "<group>"; };
 		97D7225E27D0129600DC31F7 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D7226227D0129600DC31F7 /* ShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopUITests.swift; sourceTree = "<group>"; };
 		97D7226427D0129600DC31F7 /* ShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		97D7225727D0129600DC31F7 /* ShopTests */ = {
 			isa = PBXGroup;
 			children = (
-				97D7225827D0129600DC31F7 /* ShopTests.swift */,
+				9702F60727EBA82C004304B3 /* AuthTests.swift */,
 			);
 			path = ShopTests;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97D7225927D0129600DC31F7 /* ShopTests.swift in Sources */,
+				9702F60827EBA82C004304B3 /* AuthTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
