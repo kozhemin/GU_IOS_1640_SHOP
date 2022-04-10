@@ -14,6 +14,17 @@
 		9702F61027EBC66D004304B3 /* CatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702F60F27EBC66D004304B3 /* CatalogRequestFactory.swift */; };
 		9702F61427EBCBCA004304B3 /* GoodRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702F61327EBCBCA004304B3 /* GoodRequestFactory.swift */; };
 		9702F61627EBCC59004304B3 /* GoodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702F61527EBCC59004304B3 /* GoodsTests.swift */; };
+		972E8EEB280358BF00046783 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EEA280358BF00046783 /* Basket.swift */; };
+		972E8EED2803598700046783 /* BasketAddRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EEC2803598700046783 /* BasketAddRequestFactory.swift */; };
+		972E8EEF28036E3400046783 /* BasketRemoveRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EEE28036E3400046783 /* BasketRemoveRequestFactory.swift */; };
+		972E8EF128036F3700046783 /* BasketPayRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EF028036F3700046783 /* BasketPayRequestFactory.swift */; };
+		972E8EF4280370D000046783 /* BasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EF228036FEE00046783 /* BasketTests.swift */; };
+		972E8EF92803733600046783 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 972E8EF82803733600046783 /* SnapKit */; };
+		972E8EFB2803735600046783 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EFA2803735600046783 /* BasketViewController.swift */; };
+		972E8EFD280373B700046783 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EFC280373B700046783 /* BasketView.swift */; };
+		972E8F002803742B00046783 /* AppStartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8EFF2803742B00046783 /* AppStartManager.swift */; };
+		972E8F032803766D00046783 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8F022803766D00046783 /* UIColor+ext.swift */; };
+		972E8F0528037A9100046783 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8F0428037A9100046783 /* UIButton+Ext.swift */; };
 		975E857927F8E84300B6AA61 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E857827F8E84300B6AA61 /* Review.swift */; };
 		975E857B27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E857A27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift */; };
 		975E857D27F8EA0D00B6AA61 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E857C27F8EA0D00B6AA61 /* Comments.swift */; };
@@ -72,6 +83,16 @@
 		9702F60F27EBC66D004304B3 /* CatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRequestFactory.swift; sourceTree = "<group>"; };
 		9702F61327EBCBCA004304B3 /* GoodRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodRequestFactory.swift; sourceTree = "<group>"; };
 		9702F61527EBCC59004304B3 /* GoodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsTests.swift; sourceTree = "<group>"; };
+		972E8EEA280358BF00046783 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		972E8EEC2803598700046783 /* BasketAddRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketAddRequestFactory.swift; sourceTree = "<group>"; };
+		972E8EEE28036E3400046783 /* BasketRemoveRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRemoveRequestFactory.swift; sourceTree = "<group>"; };
+		972E8EF028036F3700046783 /* BasketPayRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPayRequestFactory.swift; sourceTree = "<group>"; };
+		972E8EF228036FEE00046783 /* BasketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTests.swift; sourceTree = "<group>"; };
+		972E8EFA2803735600046783 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		972E8EFC280373B700046783 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		972E8EFF2803742B00046783 /* AppStartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStartManager.swift; sourceTree = "<group>"; };
+		972E8F022803766D00046783 /* UIColor+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
+		972E8F0428037A9100046783 /* UIButton+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		975E857827F8E84300B6AA61 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		975E857A27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsRequestFactory.swift; sourceTree = "<group>"; };
 		975E857C27F8EA0D00B6AA61 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
@@ -114,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E0F49327D3904E00DB5783 /* Alamofire in Frameworks */,
+				972E8EF92803733600046783 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +156,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		972E8EF5280372BB00046783 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97D7227327D015DF00DC31F7 /* MainView.swift */,
+				972E8EFC280373B700046783 /* BasketView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		972E8EF6280372C400046783 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97D7224527D0129300DC31F7 /* MainViewController.swift */,
+				972E8EFA2803735600046783 /* BasketViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		972E8EFE2803741700046783 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				972E8EFF2803742B00046783 /* AppStartManager.swift */,
+				97D7224127D0129300DC31F7 /* AppDelegate.swift */,
+				97D7224327D0129300DC31F7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		972E8F012803765500046783 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				972E8F0428037A9100046783 /* UIButton+Ext.swift */,
+				972E8F022803766D00046783 /* UIColor+ext.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
 		97D7223527D0129200DC31F7 = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +220,6 @@
 				97E0F48927D2BE6700DB5783 /* Core */,
 				97E0F48A27D2BE7100DB5783 /* Resources */,
 				97E0F48B27D2BE7B00DB5783 /* Environments */,
-				97D7224527D0129300DC31F7 /* MainViewController.swift */,
 			);
 			path = GBShop;
 			sourceTree = "<group>";
@@ -172,6 +230,7 @@
 				9702F60727EBA82C004304B3 /* AuthTests.swift */,
 				9702F61527EBCC59004304B3 /* GoodsTests.swift */,
 				975E858027F8EC4A00B6AA61 /* ReviewTests.swift */,
+				972E8EF228036FEE00046783 /* BasketTests.swift */,
 			);
 			path = ShopTests;
 			sourceTree = "<group>";
@@ -188,8 +247,7 @@
 		97E0F48427D2BE2A00DB5783 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				97D7224127D0129300DC31F7 /* AppDelegate.swift */,
-				97D7224327D0129300DC31F7 /* SceneDelegate.swift */,
+				972E8EFE2803741700046783 /* AppDelegate */,
 				97E0F48527D2BE3600DB5783 /* BusinessLogic */,
 				97E0F48627D2BE4400DB5783 /* Entity */,
 				97E0F48727D2BE4D00DB5783 /* Assembly */,
@@ -231,7 +289,8 @@
 		97E0F48827D2BE5700DB5783 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				97D7227327D015DF00DC31F7 /* MainView.swift */,
+				972E8EF6280372C400046783 /* Controllers */,
+				972E8EF5280372BB00046783 /* Views */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -239,6 +298,7 @@
 		97E0F48927D2BE6700DB5783 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				972E8F012803765500046783 /* Ext */,
 				97E0F48C27D38EF600DB5783 /* Network */,
 			);
 			path = Core;
@@ -280,6 +340,7 @@
 				97E0F49F27D3983600DB5783 /* Auth.swift */,
 				9702F60D27EBC509004304B3 /* Goods.swift */,
 				975E857827F8E84300B6AA61 /* Review.swift */,
+				972E8EEA280358BF00046783 /* Basket.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -297,6 +358,9 @@
 				975E857A27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift */,
 				975E858327F8F09900B6AA61 /* ReviewAddRequestFactory.swift */,
 				975E858527F8F22B00B6AA61 /* ReviewRemoveRequestFactory.swift */,
+				972E8EEC2803598700046783 /* BasketAddRequestFactory.swift */,
+				972E8EEE28036E3400046783 /* BasketRemoveRequestFactory.swift */,
+				972E8EF028036F3700046783 /* BasketPayRequestFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -319,6 +383,7 @@
 			name = GBShop;
 			packageProductDependencies = (
 				97E0F49227D3904E00DB5783 /* Alamofire */,
+				972E8EF82803733600046783 /* SnapKit */,
 			);
 			productName = Shop;
 			productReference = 97D7223E27D0129200DC31F7 /* GBShop.app */;
@@ -394,6 +459,7 @@
 			mainGroup = 97D7223527D0129200DC31F7;
 			packageReferences = (
 				97E0F49127D3904E00DB5783 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				972E8EF72803733600046783 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 97D7223F27D0129200DC31F7 /* Products */;
 			projectDirPath = "";
@@ -437,7 +503,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972E8EFD280373B700046783 /* BasketView.swift in Sources */,
 				97E0F49E27D397E200DB5783 /* AuthRequestFactory.swift in Sources */,
+				972E8EEF28036E3400046783 /* BasketRemoveRequestFactory.swift in Sources */,
 				97E0F49727D3949800DB5783 /* RequestRouter.swift in Sources */,
 				9702F60A27EBC29D004304B3 /* Good.swift in Sources */,
 				97E0F49527D3907200DB5783 /* DataRequest.swift in Sources */,
@@ -451,6 +519,7 @@
 				975E857F27F8EA5800B6AA61 /* Comment.swift in Sources */,
 				97D7227427D015DF00DC31F7 /* MainView.swift in Sources */,
 				975E857927F8E84300B6AA61 /* Review.swift in Sources */,
+				972E8EF128036F3700046783 /* BasketPayRequestFactory.swift in Sources */,
 				97E0F48E27D38F1C00DB5783 /* AbstractErrorParser.swift in Sources */,
 				97E0F49927D396E800DB5783 /* LoginResult.swift in Sources */,
 				9702F61027EBC66D004304B3 /* CatalogRequestFactory.swift in Sources */,
@@ -460,10 +529,16 @@
 				97E0F4B327D5501F00DB5783 /* ChangeUserDataRequestFactory.swift in Sources */,
 				97E0F4B127D5339900DB5783 /* DefaultResponseResult.swift in Sources */,
 				975E857D27F8EA0D00B6AA61 /* Comments.swift in Sources */,
+				972E8EEB280358BF00046783 /* Basket.swift in Sources */,
+				972E8F032803766D00046783 /* UIColor+ext.swift in Sources */,
+				972E8F002803742B00046783 /* AppStartManager.swift in Sources */,
 				9702F60C27EBC411004304B3 /* CatalogGood.swift in Sources */,
 				97D7224227D0129300DC31F7 /* AppDelegate.swift in Sources */,
 				97E0F4AF27D5332F00DB5783 /* LogOutRequestFactory.swift in Sources */,
 				97E0F4A427D39B3900DB5783 /* RequestFactory.swift in Sources */,
+				972E8EFB2803735600046783 /* BasketViewController.swift in Sources */,
+				972E8EED2803598700046783 /* BasketAddRequestFactory.swift in Sources */,
+				972E8F0528037A9100046783 /* UIButton+Ext.swift in Sources */,
 				97E0F49B27D396F900DB5783 /* User.swift in Sources */,
 				97D7224427D0129300DC31F7 /* SceneDelegate.swift in Sources */,
 				97E0F4A027D3983600DB5783 /* Auth.swift in Sources */,
@@ -475,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9702F61627EBCC59004304B3 /* GoodsTests.swift in Sources */,
+				972E8EF4280370D000046783 /* BasketTests.swift in Sources */,
 				9702F60827EBA82C004304B3 /* AuthTests.swift in Sources */,
 				975E858227F8ED9C00B6AA61 /* ReviewTests.swift in Sources */,
 			);
@@ -806,6 +882,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		972E8EF72803733600046783 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = 5.0.1;
+				kind = branch;
+			};
+		};
 		97E0F49127D3904E00DB5783 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -817,6 +901,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		972E8EF82803733600046783 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 972E8EF72803733600046783 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		97E0F49227D3904E00DB5783 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 97E0F49127D3904E00DB5783 /* XCRemoteSwiftPackageReference "Alamofire" */;
