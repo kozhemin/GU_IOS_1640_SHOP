@@ -10,15 +10,15 @@ import UIKit
 final class MainView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupLayout()
+        configureUI()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupLayout()
+        configureUI()
     }
 
-    private func setupLayout() {
+    private func configureUI() {
         // ...
     }
 }

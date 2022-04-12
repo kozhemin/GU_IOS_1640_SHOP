@@ -13,7 +13,7 @@ extension UIButton {
         var config = UIButton.Configuration.filled()
 
         config.titleAlignment = .center
-        config.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4)
+        config.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
         config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
             var outgoing = incoming
             outgoing.font = UIFont(name: "AppleSDGothicNeo-Bold", size: fontSize)
@@ -24,12 +24,15 @@ extension UIButton {
         config.buttonSize = .small
 
         var background = UIButton.Configuration.filled().background
-        background.cornerRadius = 0
         background.backgroundColor = .pinkColor
         background.strokeColor = .pinkColor
 
         config.background = background
         btn.configuration = config
         return btn
+    }
+
+    func showActivity(isShow: Bool) {
+        configuration?.showsActivityIndicator = isShow
     }
 }
