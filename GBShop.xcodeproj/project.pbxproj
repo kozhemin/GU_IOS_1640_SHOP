@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9700360A280A024200D68E3A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97003609280A024200D68E3A /* ProductCollectionViewCell.swift */; };
+		9700360C280A044E00D68E3A /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700360B280A044E00D68E3A /* CatalogPresenter.swift */; };
+		9700360E280A1E4C00D68E3A /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700360D280A1E4C00D68E3A /* UIImageView+Ext.swift */; };
 		9702F60827EBA82C004304B3 /* AuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702F60727EBA82C004304B3 /* AuthTests.swift */; };
 		9702F60A27EBC29D004304B3 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702F60927EBC29D004304B3 /* Good.swift */; };
 		9702F60C27EBC411004304B3 /* CatalogGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702F60B27EBC411004304B3 /* CatalogGood.swift */; };
@@ -46,7 +49,7 @@
 		97AD8DC5280584E400821B42 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD8DC4280584E400821B42 /* RegistrationPresenter.swift */; };
 		97D7224227D0129300DC31F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7224127D0129300DC31F7 /* AppDelegate.swift */; };
 		97D7224427D0129300DC31F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7224327D0129300DC31F7 /* SceneDelegate.swift */; };
-		97D7224627D0129300DC31F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7224527D0129300DC31F7 /* MainViewController.swift */; };
+		97D7224627D0129300DC31F7 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7224527D0129300DC31F7 /* CatalogViewController.swift */; };
 		97D7224B27D0129600DC31F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D7224A27D0129600DC31F7 /* Assets.xcassets */; };
 		97D7224E27D0129600DC31F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D7224C27D0129600DC31F7 /* LaunchScreen.storyboard */; };
 		97D7226327D0129600DC31F7 /* ShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7226227D0129600DC31F7 /* ShopUITests.swift */; };
@@ -88,6 +91,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97003609280A024200D68E3A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		9700360B280A044E00D68E3A /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
+		9700360D280A1E4C00D68E3A /* UIImageView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		9702F60727EBA82C004304B3 /* AuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTests.swift; sourceTree = "<group>"; };
 		9702F60927EBC29D004304B3 /* Good.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good.swift; sourceTree = "<group>"; };
 		9702F60B27EBC411004304B3 /* CatalogGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogGood.swift; sourceTree = "<group>"; };
@@ -127,7 +133,7 @@
 		97D7223E27D0129200DC31F7 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D7224127D0129300DC31F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97D7224327D0129300DC31F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		97D7224527D0129300DC31F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		97D7224527D0129300DC31F7 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		97D7224A27D0129600DC31F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97D7224D27D0129600DC31F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97D7224F27D0129600DC31F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 		972E8EF5280372BB00046783 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97003609280A024200D68E3A /* ProductCollectionViewCell.swift */,
 				97D7227327D015DF00DC31F7 /* MainView.swift */,
 				972E8EFC280373B700046783 /* BasketView.swift */,
 				978FBBD4280435DF00A8E9A3 /* LoginFormView.swift */,
@@ -196,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				971DB78C2804CAB00014269F /* TabBarViewController.swift */,
-				97D7224527D0129300DC31F7 /* MainViewController.swift */,
+				97D7224527D0129300DC31F7 /* CatalogViewController.swift */,
 				972E8EFA2803735600046783 /* BasketViewController.swift */,
 				978FBBD2280435A900A8E9A3 /* LoginViewController.swift */,
 				978FBBDA28046CC600A8E9A3 /* ProfileViewController.swift */,
@@ -218,6 +225,7 @@
 		972E8F012803765500046783 /* Ext */ = {
 			isa = PBXGroup;
 			children = (
+				9700360D280A1E4C00D68E3A /* UIImageView+Ext.swift */,
 				978FBBD82804365D00A8E9A3 /* UIFont+ext.swift */,
 				972E8F0428037A9100046783 /* UIButton+Ext.swift */,
 				972E8F022803766D00046783 /* UIColor+ext.swift */,
@@ -232,6 +240,7 @@
 				978FBBD0280423FD00A8E9A3 /* BasketPresenter.swift */,
 				978FBBDE2804712200A8E9A3 /* ProfilePresenter.swift */,
 				97AD8DC4280584E400821B42 /* RegistrationPresenter.swift */,
+				9700360B280A044E00D68E3A /* CatalogPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -553,6 +562,7 @@
 				972E8EEF28036E3400046783 /* BasketRemoveRequestFactory.swift in Sources */,
 				978FBBD72804360700A8E9A3 /* LoginPresenter.swift in Sources */,
 				97E0F49727D3949800DB5783 /* RequestRouter.swift in Sources */,
+				9700360A280A024200D68E3A /* ProductCollectionViewCell.swift in Sources */,
 				9702F60A27EBC29D004304B3 /* Good.swift in Sources */,
 				97E0F49527D3907200DB5783 /* DataRequest.swift in Sources */,
 				975E857B27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift in Sources */,
@@ -560,7 +570,8 @@
 				9702F61427EBCBCA004304B3 /* GoodRequestFactory.swift in Sources */,
 				97E0F4AA27D3EB3D00DB5783 /* RegistrationRequestFactory.swift in Sources */,
 				975E858627F8F22B00B6AA61 /* ReviewRemoveRequestFactory.swift in Sources */,
-				97D7224627D0129300DC31F7 /* MainViewController.swift in Sources */,
+				9700360C280A044E00D68E3A /* CatalogPresenter.swift in Sources */,
+				97D7224627D0129300DC31F7 /* CatalogViewController.swift in Sources */,
 				97E0F49027D38F6700DB5783 /* ErrorParser.swift in Sources */,
 				975E857F27F8EA5800B6AA61 /* Comment.swift in Sources */,
 				971DB78D2804CAB00014269F /* TabBarViewController.swift in Sources */,
@@ -593,6 +604,7 @@
 				978FBBDD28046D4B00A8E9A3 /* ProfileView.swift in Sources */,
 				97AD8DC3280583AC00821B42 /* RegistrationFormView.swift in Sources */,
 				978FBBD5280435DF00A8E9A3 /* LoginFormView.swift in Sources */,
+				9700360E280A1E4C00D68E3A /* UIImageView+Ext.swift in Sources */,
 				97E0F49B27D396F900DB5783 /* User.swift in Sources */,
 				978FBBDB28046CC600A8E9A3 /* ProfileViewController.swift in Sources */,
 				97D7224427D0129300DC31F7 /* SceneDelegate.swift in Sources */,

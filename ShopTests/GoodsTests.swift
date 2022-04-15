@@ -20,24 +20,24 @@ class GoodsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testGetGood() throws {
-        let exp = expectation(description: "testGetGood")
-        let request = requestFactory.makeGoodRequestFactory()
-        var responseProductName = ""
-        
-        request.getGood(productId: 1) { response in
-            switch response.result {
-            case let .success(resp):
-                responseProductName = resp.productName
-            case .failure:
-                XCTFail()
-            }
-            exp.fulfill()
-        }
-        waitForExpectations(timeout: timeout)
-        
-        XCTAssertEqual(responseProductName, "Ноутбук")
-    }
+//    func testGetGood() throws {
+//        let exp = expectation(description: "testGetGood")
+//        let request = requestFactory.makeGoodRequestFactory()
+//        var responseProductName = ""
+//
+//        request.getGood(productId: 1) { response in
+//            switch response.result {
+//            case let .success(resp):
+//                responseProductName = resp.productName
+//            case .failure:
+//                XCTFail()
+//            }
+//            exp.fulfill()
+//        }
+//        waitForExpectations(timeout: timeout)
+//
+//        XCTAssertEqual(responseProductName, "Ноутбук")
+//    }
     
     func testGetGoodCatalog() throws {
         let exp = expectation(description: "testGetGoodCatalog")

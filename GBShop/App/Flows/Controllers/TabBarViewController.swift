@@ -31,14 +31,17 @@ class TabBarViewController: UITabBarController {
     }
 
     func setupVCs() {
+        let profilePresenter = ProfilePresenter()
+        let profileViewController = ProfileViewController(presenter: profilePresenter)
+        profilePresenter.viewInput = profileViewController
 
-        let provfilePresenter = ProfilePresenter()
-        let profileViewController = ProfileViewController(presenter: provfilePresenter)
-        provfilePresenter.viewInput = profileViewController
+        let catalogPresenter = CatalogPresenter()
+        let catalogViewController = CatalogViewController(presenter: catalogPresenter)
+        catalogPresenter.viewInput = catalogViewController
 
         viewControllers = [
             createNavController(
-                for: MainViewController(),
+                for: catalogViewController,
                 title: NSLocalizedString("Catalog", comment: ""),
                 image: UIImage(systemName: "note.text")!
             ),
