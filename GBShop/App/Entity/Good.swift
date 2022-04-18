@@ -1,5 +1,5 @@
 //
-//  Good.swift
+//  CatalogGood.swift
 //  GBShop
 //
 //  Created by Егор Кожемин on 24.03.2022.
@@ -8,16 +8,15 @@
 import Foundation
 
 struct Good: Codable {
-    let id = UUID()
-    let result: Int
+    let id: Int
     let productName: String
     let productPrice: Double
-    let productDescription: String
+    let imageUrl: String
 
     enum CodingKeys: String, CodingKey {
-        case result
+        case id = "id_product"
         case productName = "product_name"
-        case productPrice = "product_price"
-        case productDescription = "product_description"
+        case productPrice = "price"
+        case imageUrl = "image_url"
     }
 }

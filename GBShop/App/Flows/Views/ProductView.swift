@@ -8,7 +8,7 @@
 import SnapKit
 import UIKit
 
-final class BasketView: UIView {
+final class ProductView: UIView {
     let sizeInset: CGFloat = 20
 
     lazy var breadcrumbLabel: UILabel = {
@@ -65,15 +65,15 @@ final class BasketView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupLayout()
+        configureUI()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupLayout()
+        configureUI()
     }
 
-    private func setupLayout() {
+    private func configureUI() {
         addSubview(breadcrumbLabel)
         addSubview(imageView)
         addSubview(producnNameLabel)
@@ -115,14 +115,5 @@ final class BasketView: UIView {
             make.top.equalTo(productPriceLabel.snp.bottom).offset(sizeInset)
             make.width.equalTo(self).multipliedBy(0.8)
         }
-
-        demoData()
-    }
-
-    func demoData() {
-        imageView.image = UIImage(named: "product_1")
-        producnNameLabel.text = "iPhone 2G"
-        productDescriptionLabel.text = "iPhone 2G (original) является первой моделью смартфона Apple, который был представлен 9 января 2007 года на ежегодной всемирной выставке MacWorld в Сан-Франциско"
-        productPriceLabel.text = "110$"
     }
 }

@@ -43,7 +43,7 @@ extension Goods {
 }
 
 extension Goods: CatalogRequestFactory {
-    func getCatalog(pageNumber: Int, categoryId: Int, completionHandler: @escaping (AFDataResponse<[CatalogGood]>) -> Void) {
+    func getCatalog(pageNumber: Int, categoryId: Int, completionHandler: @escaping (AFDataResponse<[Good]>) -> Void) {
         let requestModel = GetCatalog(baseUrl: baseUrl, pageNumber: pageNumber, categoryId: categoryId)
         request(request: requestModel, completionHandler: completionHandler)
     }
