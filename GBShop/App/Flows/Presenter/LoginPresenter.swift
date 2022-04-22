@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 protocol LoginViewOutput: AnyObject {
     func viewDidTapAuthBtn(login: String?, password: String?)
@@ -43,6 +44,7 @@ extension LoginPresenter: LoginViewOutput {
                     self?.viewInput?.showError()
                 case .success:
                     self?.successLogin()
+                    Crashlytics.setLog(log: LogType.authSuccess)
                 }
             }
         }

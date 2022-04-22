@@ -30,6 +30,9 @@
 		972E8F0528037A9100046783 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E8F0428037A9100046783 /* UIButton+Ext.swift */; };
 		974A601A2810AC55001180A9 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A60192810AC55001180A9 /* GBShopUITests.swift */; };
 		974A601C2810AC55001180A9 /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A601B2810AC55001180A9 /* GBShopUITestsLaunchTests.swift */; };
+		975129C828133F240088E18F /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 975129C728133F240088E18F /* FirebaseCrashlytics */; };
+		975129CB281342E70088E18F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 975129CA281342E70088E18F /* GoogleService-Info.plist */; };
+		975129CD281354050088E18F /* CrashlyticsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975129CC281354050088E18F /* CrashlyticsLog.swift */; };
 		975E857927F8E84300B6AA61 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E857827F8E84300B6AA61 /* Review.swift */; };
 		975E857B27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E857A27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift */; };
 		975E857D27F8EA0D00B6AA61 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E857C27F8EA0D00B6AA61 /* Comments.swift */; };
@@ -116,6 +119,8 @@
 		974A60172810AC55001180A9 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		974A60192810AC55001180A9 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		974A601B2810AC55001180A9 /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		975129CA281342E70088E18F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		975129CC281354050088E18F /* CrashlyticsLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsLog.swift; sourceTree = "<group>"; };
 		975E857827F8E84300B6AA61 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		975E857A27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsRequestFactory.swift; sourceTree = "<group>"; };
 		975E857C27F8EA0D00B6AA61 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
@@ -175,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975129C828133F240088E18F /* FirebaseCrashlytics in Frameworks */,
 				97E0F49327D3904E00DB5783 /* Alamofire in Frameworks */,
 				972E8EF92803733600046783 /* SnapKit in Frameworks */,
 			);
@@ -292,6 +298,7 @@
 		97D7224027D0129200DC31F7 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
+				975129CA281342E70088E18F /* GoogleService-Info.plist */,
 				97E0F48427D2BE2A00DB5783 /* App */,
 				97E0F48927D2BE6700DB5783 /* Core */,
 				97E0F48A27D2BE7100DB5783 /* Resources */,
@@ -341,6 +348,7 @@
 				9702F60B27EBC411004304B3 /* Good.swift */,
 				975E857C27F8EA0D00B6AA61 /* Comments.swift */,
 				975E857E27F8EA5800B6AA61 /* Comment.swift */,
+				975129CC281354050088E18F /* CrashlyticsLog.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -460,6 +468,7 @@
 				97D7223A27D0129200DC31F7 /* Sources */,
 				97D7223B27D0129200DC31F7 /* Frameworks */,
 				97D7223C27D0129200DC31F7 /* Resources */,
+				975129C9281340670088E18F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -469,6 +478,7 @@
 			packageProductDependencies = (
 				97E0F49227D3904E00DB5783 /* Alamofire */,
 				972E8EF82803733600046783 /* SnapKit */,
+				975129C728133F240088E18F /* FirebaseCrashlytics */,
 			);
 			productName = Shop;
 			productReference = 97D7223E27D0129200DC31F7 /* GBShop.app */;
@@ -527,6 +537,7 @@
 			packageReferences = (
 				97E0F49127D3904E00DB5783 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				972E8EF72803733600046783 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				975129C628133F240088E18F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 97D7223F27D0129200DC31F7 /* Products */;
 			projectDirPath = "";
@@ -553,6 +564,7 @@
 			files = (
 				97D7224E27D0129600DC31F7 /* LaunchScreen.storyboard in Resources */,
 				97D7224B27D0129600DC31F7 /* Assets.xcassets in Resources */,
+				975129CB281342E70088E18F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +576,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		975129C9281340670088E18F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		974A60132810AC55001180A9 /* Sources */ = {
@@ -587,6 +621,7 @@
 				978FBBD72804360700A8E9A3 /* LoginPresenter.swift in Sources */,
 				97E0F49727D3949800DB5783 /* RequestRouter.swift in Sources */,
 				9700360A280A024200D68E3A /* ProductCollectionViewCell.swift in Sources */,
+				975129CD281354050088E18F /* CrashlyticsLog.swift in Sources */,
 				97E0F49527D3907200DB5783 /* DataRequest.swift in Sources */,
 				975E857B27F8E9DE00B6AA61 /* ReviewsRequestFactory.swift in Sources */,
 				9702F60E27EBC509004304B3 /* Goods.swift in Sources */,
@@ -744,7 +779,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -972,6 +1007,14 @@
 				kind = branch;
 			};
 		};
+		975129C628133F240088E18F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		97E0F49127D3904E00DB5783 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -987,6 +1030,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 972E8EF72803733600046783 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		975129C728133F240088E18F /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 975129C628133F240088E18F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 		97E0F49227D3904E00DB5783 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

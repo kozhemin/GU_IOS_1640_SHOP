@@ -7,6 +7,7 @@
 
 import SnapKit
 import UIKit
+import Firebase
 
 protocol DetailProductViewInput: AnyObject {
     func buttonActivity(isShow: Bool)
@@ -111,6 +112,7 @@ class DetailProductViewController: UIViewController {
 
     @objc
     private func payTapBtn(sender _: UIButton) {
+        Crashlytics.setLog(log: LogType.tapPay)
         presenter.viewDidTapPayBtn()
     }
 }

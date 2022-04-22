@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 let cellReuseIdentifier = "ProductCell"
 
@@ -50,6 +51,8 @@ final class CatalogViewController: UIViewController {
 
         presenter.fetchCatalogData()
         configureUi()
+        
+        Crashlytics.setLog(log: LogType.viewCatalog)
     }
 
     func configureUi() {
@@ -78,6 +81,7 @@ extension CatalogViewController: UICollectionViewDataSource {
 
     @objc
     private func tapDetailProductBtn(sender: UIButton) {
+        Crashlytics.setLog(log: LogType.viewDetailCatalog)
         let good = productList[sender.tag]
         presenter.viewDidTapDetailPorudctBtn(good: good)
     }
