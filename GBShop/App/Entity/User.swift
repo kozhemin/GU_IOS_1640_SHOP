@@ -37,6 +37,7 @@ extension RequestUserData {
         return [
             "id_user": userId,
             "username": userName,
+            "password": password,
             "email": email,
             "gender": gender,
             "credit_card": creditCard,

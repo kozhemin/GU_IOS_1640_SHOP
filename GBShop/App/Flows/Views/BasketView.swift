@@ -60,7 +60,6 @@ final class BasketView: UIView {
         btn.configuration?.title = "Pay"
         btn.configuration?.buttonSize = .large
         btn.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
-        btn.addTarget(self, action: #selector(payTapBtn), for: .touchUpInside)
         return btn
     }()
 
@@ -125,22 +124,5 @@ final class BasketView: UIView {
         producnNameLabel.text = "iPhone 2G"
         productDescriptionLabel.text = "iPhone 2G (original) является первой моделью смартфона Apple, который был представлен 9 января 2007 года на ежегодной всемирной выставке MacWorld в Сан-Франциско"
         productPriceLabel.text = "110$"
-    }
-
-    @objc
-    private func payTapBtn(sender _: UIButton) {
-        payButton.configuration?.showsActivityIndicator = true
-        let request = requestFactory?.makeBasketPayFactory()
-        guard let request = request else { return }
-        request.pay { response in
-            DispatchQueue.main.async { [weak self] in
-                switch response.result {
-                case .success:
-                    self?.payButton.configuration?.showsActivityIndicator = false
-                case .failure: break
-                    // ..show payment error
-                }
-            }
-        }
     }
 }

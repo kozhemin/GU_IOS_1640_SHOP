@@ -36,7 +36,15 @@ final class AppStartManager {
     }()
 
     func controllerBuilder() -> UIViewController {
-        let vc = BasketViewController()
-        return vc
+        let loginPresenter = LoginPresenter()
+        let loginViewController = LoginViewController(presenter: loginPresenter)
+        loginPresenter.viewInput = loginViewController
+        return loginViewController
+
+        // .. if !auth
+//        let basketPresenter = BasketPresenter()
+//        let basketVc = BasketViewController(presenter: basketPresenter)
+//        basketPresenter.viewInput = basketVc
+//        return basketVc
     }
 }

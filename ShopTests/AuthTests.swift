@@ -73,6 +73,7 @@ class AuthTests: XCTestCase {
         var responseDataAssert: Int = 0
         
         request.change(user: userData) { response in
+            print(response.result)
             switch response.result {
             case let .success(regData):
                 responseDataAssert = regData.result

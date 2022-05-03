@@ -26,9 +26,7 @@ class MainViewController: UIViewController {
         configureUi()
     }
 
-    func configureUi() {
-        view.backgroundColor = .blue
-    }
+    func configureUi() {}
 
     // MARK: - Lifecycle
 

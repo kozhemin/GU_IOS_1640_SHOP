@@ -7,12 +7,19 @@
 
 import UIKit
 
+protocol BasketViewInput: AnyObject {
+    func buttonActivity(isShow: Bool)
+    func showError()
+}
+
 class BasketViewController: UIViewController {
+    private let presenter: BasketViewOutput
     private var basketView: BasketView {
         return view as! BasketView
     }
 
-    init() {
+    init(presenter: BasketViewOutput) {
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -26,6 +33,10 @@ class BasketViewController: UIViewController {
         configureUi()
     }
 
+    override func viewWillAppear(_: Bool) {
+        basketView.payButton.addTarget(self, action: #selector(payTapBtn), for: .touchUpInside)
+    }
+
     func configureUi() {
         view.backgroundColor = .white
     }
@@ -36,5 +47,20 @@ class BasketViewController: UIViewController {
         super.loadView()
         let view = BasketView()
         self.view = view
+    }
+
+    @objc
+    private func payTapBtn(sender _: UIButton) {
+        presenter.viewDidTapPayBtn()
+    }
+}
+
+extension BasketViewController: BasketViewInput {
+    func buttonActivity(isShow: Bool) {
+        basketView.payButton.showActivity(isShow: isShow)
+    }
+
+    func showError() {
+        print("... show payment error")
     }
 }
