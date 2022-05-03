@@ -10,7 +10,7 @@ import UIKit
 let cellReuseIdentifier = "ProductCell"
 
 protocol CatalogViewInput {
-    func showDataView(products: [CatalogGood])
+    func showDataView(products: [Good])
     func showError()
 }
 
@@ -33,7 +33,7 @@ final class CatalogViewController: UIViewController {
         return collectionView
     }()
 
-    var productList = [CatalogGood]()
+    var productList = [Good]()
 
     init(presenter: CatalogViewOutput) {
         self.presenter = presenter
@@ -69,15 +69,17 @@ extension CatalogViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! ProductCollectionViewCell
 
-        let product = productList[indexPath.row]
-        myCell.configure(product: product)
-        myCell.addToCartButton.addTarget(self, action: #selector(tapBasketBtn), for: .touchUpInside)
+        let good = productList[indexPath.row]
+        myCell.configure(good: good)
+        myCell.addToCartButton.tag = indexPath.row
+        myCell.addToCartButton.addTarget(self, action: #selector(tapDetailProductBtn), for: .touchUpInside)
         return myCell
     }
 
     @objc
-    private func tapBasketBtn(sender _: UIButton) {
-        presenter.viewDidTapBasketBtn()
+    private func tapDetailProductBtn(sender: UIButton) {
+        let good = productList[sender.tag]
+        presenter.viewDidTapDetailPorudctBtn(good: good)
     }
 }
 
@@ -111,7 +113,7 @@ extension CatalogViewController: CatalogViewInput {
         present(alert, animated: true, completion: nil)
     }
 
-    func showDataView(products: [CatalogGood]) {
+    func showDataView(products: [Good]) {
         productList = products
         collectionView.reloadData()
     }
