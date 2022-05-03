@@ -40,11 +40,5 @@ final class AppStartManager {
         let loginViewController = LoginViewController(presenter: loginPresenter)
         loginPresenter.viewInput = loginViewController
         return loginViewController
-
-        // .. if !auth
-//        let basketPresenter = BasketPresenter()
-//        let basketVc = BasketViewController(presenter: basketPresenter)
-//        basketPresenter.viewInput = basketVc
-//        return basketVc
     }
 }

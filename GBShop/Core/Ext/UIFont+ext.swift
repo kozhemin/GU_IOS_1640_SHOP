@@ -1,6 +1,6 @@
 //
 //  UIFont+ext.swift
-//  Ooptika
+//  GBShop
 //
 //  Created by Егор Кожемин on 31.03.2022.
 //

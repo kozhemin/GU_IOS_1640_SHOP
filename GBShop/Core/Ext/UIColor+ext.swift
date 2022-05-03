@@ -1,6 +1,6 @@
 //
 //  UIColor+ext.swift
-//  TobaccoShop
+//  GBShop
 //
 //  Created by Егор Кожемин on 16.03.2022.
 //
