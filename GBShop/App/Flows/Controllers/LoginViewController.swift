@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 protocol LoginViewInput {
     func showError()
@@ -87,18 +88,23 @@ class LoginViewController: UIViewController {
 
     @objc
     private func tapBtnAuth(sender _: UIButton) {
+        Crashlytics.setLog(log: LogType.btnTapEnterApp)
+        
         loginFormView.btnProcess(show: true)
         presenter.viewDidTapAuthBtn(login: loginFormView.loginTextField.text, password: loginFormView.passwordTextField.text)
     }
 
     @objc
     private func tapBtnRegister(sender _: UIButton) {
+        Crashlytics.setLog(log: LogType.tapRegister)
         presenter.viewDidTapRegistrationBtn()
     }
 }
 
 extension LoginViewController: LoginViewInput {
     func showError() {
+        Crashlytics.setLog(log: LogType.authError)
+        
         loginFormView.showAuthError()
         loginFormView.btnProcess(show: false)
     }
