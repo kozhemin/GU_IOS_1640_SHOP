@@ -31,6 +31,7 @@ final class LoginFormView: UIView {
         let btn = UIButton(type: .system).themeDefault(fontSize: 20)
         btn.configuration?.title = "Enter"
         btn.configuration?.buttonSize = .large
+        btn.accessibilityIdentifier = "enter"
         return btn
     }()
 
@@ -67,6 +68,7 @@ final class LoginFormView: UIView {
         textField.textColor = .gray
         textField.leftView = iconView
         textField.leftViewMode = .always
+        textField.accessibilityIdentifier = "login"
         return textField
     }()
 
@@ -95,6 +97,7 @@ final class LoginFormView: UIView {
         textField.textColor = .gray
         textField.leftView = iconView
         textField.leftViewMode = .always
+        textField.accessibilityIdentifier = "password"
         return textField
     }()
 

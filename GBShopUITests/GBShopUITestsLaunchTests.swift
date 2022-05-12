@@ -1,13 +1,13 @@
 //
-//  ShopUITestsLaunchTests.swift
-//  ShopUITests
+//  GBShopUITestsLaunchTests.swift
+//  GBShopUITests
 //
-//  Created by Егор Кожемин on 03.03.2022.
+//  Created by Егор Кожемин on 21.04.2022.
 //
 
 import XCTest
 
-class ShopUITestsLaunchTests: XCTestCase {
+class GBShopUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
